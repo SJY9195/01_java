@@ -2,8 +2,8 @@ package main.java.com.ohgiraffers.section06.parameter;
 
 public class ParameterTest {
 
-    public void testPrimaryTypeParameter(int num){
-        System.out.println("매개변수로 전달 받은 값 : " + num);
+    public void testPrimaryTypeParameter(int num){    // int num은 매개변수
+        System.out.println("매개변수로 전달 받은 값 : " + num);  //여기서 Application안에 있는 전달인자를 통해 num으로 넘겨 받는다.
     }
 
     public void testPrimaryTypeParameter(int[] iarr){  //오버로딩
@@ -37,6 +37,7 @@ public class ParameterTest {
         rectAngle.setHeight(100);
         rectAngle.calcArea();
         rectAngle.calcRound();
+
     }
 
     public void testVariableLengthArrayParameter(String name, String... hobby){  //...가 가변배열이다.

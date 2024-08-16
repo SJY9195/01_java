@@ -3,7 +3,6 @@ package main.java.com.ohgiraffers.section06.parameter;
 public class RectAngle {
 
 
-
     private double width;
 
     private double height;

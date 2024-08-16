@@ -18,7 +18,7 @@ public class Application {
         ParameterTest pt = new ParameterTest();
 
         int num = 20;
-        pt.testPrimaryTypeParameter(num);
+        pt.testPrimaryTypeParameter(num);  //num은 전달인자.
 
         int[] iarr = {1,2,3,4,5,6,7};
         System.out.println("인자로 전달하는 값 : " + iarr);

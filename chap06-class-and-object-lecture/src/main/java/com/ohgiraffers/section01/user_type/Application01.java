@@ -7,7 +7,7 @@ public class Application01 {
 
         // 1. 변수를 이용한 회원 데이터 관리
 
-        String id = "user01"
+        String id = "user01";
         String pwd = "pass01";
         String name = "홍길동";
         int age = 20;
