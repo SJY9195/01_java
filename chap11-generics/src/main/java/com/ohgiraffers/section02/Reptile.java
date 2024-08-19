@@ -1,6 +1,6 @@
 package main.java.com.ohgiraffers.section02;
 
-public class Raptile implements Animal {
+public class Reptile implements Animal {
 
 
 
