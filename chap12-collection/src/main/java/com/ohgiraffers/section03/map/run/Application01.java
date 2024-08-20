@@ -28,13 +28,39 @@ public class Application01 {
         System.out.println(hmap);
 
         hmap.put(2, "yellow");    // 앞에가 key, 뒤에가 value이다!!!
-        System.o
+        System.out.println(hmap);
 
-
-
-
+        hmap.put(3,"yellow");
+        System.out.println(hmap);
 
                 //k ketSet90*//
+
+        // 값을 가져올 때  get()
+        System.out.println("키 3 에 대한 값 : " + hmap.get(3));
+
+        // 키 값 삭제 처리 remove()
+        hmap.remove(3);
+        System.out.println(hmap);
+
+        System.out.println(hmap.size());
+
+        HashMap<String,String> hmap2 = new HashMap<>();
+
+        hmap2.put("one","java17");
+        hmap2.put("two","mysql");
+        hmap2.put("three","jdbc");
+        hmap2.put("four","html5");
+        hmap2.put("five","css3");
+
+        // keySet() 이용해서 키만 따로 set으로 만들고 , iterator()로
+        // 키에 대한 목록을 만든다.
+        Iterator<String> keyIter = hmap2.keySet().iterator();
+
+        while(keyIter.hasNext()){
+            String key = keyIter.next();
+            String value = hmap2.get(key);
+            System.out.println(key + " : " + value);
+        }
 
         Collection<String> values = hmap2.values();
 
@@ -43,70 +69,21 @@ public class Application01 {
             System.out.println(valueIter.next());
         }
 
-        Object[] valueArr = values.toArray()));
+        Object[] valueArr = values.toArray();
         for (int i = 0; i < valueArr.length; i++) {
             System.out.println(i + " : " + valueArr[i]);
         }
 
-        // Map의 내부에 존재하는 EntrySet을 이용
-        Set<Map.Entry<String, String>> set = hmap2.entrySet();
 
-        Iterator<Map.Entry<String, String>> entryIter = set.iterator();
+        // Map의 내부에 존재하는 EntrySet을 이용
+        Set<Map.Entry<String,String>> set = hmap2.entrySet();
+
+        Iterator<Map.Entry<String,String>> entryIter = set.iterator();
 
         while(entryIter.hasNext()){
-            Map.Entry<String, String> entry = entryIter.next();
-
-
+            Map.Entry<String,String> entry = entryIter.next();
             System.out.println(entry.getKey() + " : " + entry.getValue());
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    ap.put(3, "yellow");    //키 중복불가 밸류 중복가능
-        System.out.println("키 3 에 대한값" + hmapget(3))[]
-
-        // 키 값 삭제 처리 remove()
-        hmap.remove(3);
-        s
 
     }
 }

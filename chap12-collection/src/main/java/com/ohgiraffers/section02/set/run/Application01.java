@@ -26,7 +26,7 @@ public class Application01 {
         hset.add(new String("jdbc"));
         hset.add(new String("mysql"));
         hset.add(new String("css"));
-        hset.add("java");
+        hset.add("java");   // 이렇게 추가해도 중복 저장 허용하지 않으므로 리스트에 추가되지 않는다!
 
         System.out.println(hset);
 
