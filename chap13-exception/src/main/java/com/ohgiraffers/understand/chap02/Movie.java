@@ -51,13 +51,14 @@ public class Movie {
 
     @Override
     public String toString() {
-        return "Movie{" +
-                "title='" + title + '\'' +
-                ", runningtime='" + runningtime + '\'' +
-                ", numberoftotalseats=" + numberoftotalseats +
-                ", numberofreservedseats=" + numberofreservedseats +
-                '}';
+        return
+                "영화제목 : " + title +
+                ", 상영시간 : " + runningtime +
+                ", 총 좌석 : " + numberoftotalseats +
+                ", 예약된 좌석 : " + numberofreservedseats;
+
     }
+
 
     public int availableSeats() {     // 남은 좌석 수
         return numberoftotalseats - numberofreservedseats;
@@ -67,6 +68,13 @@ public class Movie {
         return "영화 제목 : " + title + "상영 시간 : " + runningtime + "남은 좌석 : " + availableSeats() + "/" + numberoftotalseats;
     }
 
-
+    public boolean reserveSeat() {
+        if (numberofreservedseats < numberoftotalseats) {
+            numberofreservedseats++;
+            return true;
+        }else {
+            return false;
+        }
+    }
 
 }

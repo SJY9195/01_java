@@ -45,7 +45,7 @@ public class BankAccount {
                 ", accountNumber=" + accountNumber +
                 ", name='" + name + '\'' +
                 '}';
-    }
+    }                                       //DTO는 데이터만 관리하는 클래스 이므로 클래스에 메소드가 추가되면 DTO가 아니다!!
 
     public void deposit(int amount) {       //입금 메소드   amount가 입금금액
 
